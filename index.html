@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+    <span class="logo">Movie<span>Hub</span></span>
+    <div class="nav-right">
+      <button id="listBtn" class="navbtn">My List</button>
+      <button id="themeBtn" class="navbtn">&#9728;</button>
+      <input id="search" type="search" placeholder="Search movies...">
+    </div>
+  </nav>
+
+  <header id="hero" class="hero"></header>
+
+  <main id="rows"></main>
+
+  <section id="results" class="hidden">
+    <h2 id="resultsTitle"></h2>
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="close">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>MovieHub &copy; 2026. Movie data from TMDB.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
